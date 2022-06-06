@@ -1,0 +1,42 @@
+.Jobs {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 30vh;
+    min-height: 250px;
+    box-sizing: border-box;
+    border: 5px solid whitesmoke;
+    border-radius: 20px;
+    margin: .5em 0 .5em 0;
+    padding-left: 1em;
+    justify-content: space-between;
+
+}
+
+.company {
+    font-size: 1.7rem;
+    color: #FFB400;
+}
+
+.location {
+    font-size: 1.2rem;
+    color: #3D5AD1;
+}
+
+.exp {
+    background-color: #E7FFFB;
+    width: 30%;
+    border: solid 1px whitesmoke;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding-left: 2em;
+}
+
+.skills {
+    padding: 1em 1em 0;
+    font-size: 1.2rem;
+}
+
+span {
+    display: inline-block;
+}
