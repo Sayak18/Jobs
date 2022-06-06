@@ -15,18 +15,19 @@ export default function Navbar(){
       .catch((err) => {
         console.log(err);
         setError(err.message);
-        console.log(error);   
+        console.log(error);
         // setLoading(false);
       });
   }, []);
+  console.log(typeof userData)
   console.log(userData)
 
     return(
     <div className="nav">
         <h1 className="nav-el">ABC Jobs</h1>
-        <div className="user">
+        {/* <div className="user">
             <img src={userData.pictureUrl} alt="display pic"/>
             <span className="user-el">{userData.name} student of {userData.college}</span>
-        </div>
+        </div> */}
     </div>)
 }
