@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import JobsList from "./Components/open";
+import React from "react";
+import Navbar from "./Components/nav";
+import "./styles/App.css"
+export default function App() {
+  // const [loading, setLoading] = useState(true);
+  const [error, setError] = React.useState(undefined);
+  const [data, setData] = React.useState();
 
-function App() {
+  React.useEffect(() => {
+    fetch("https://refertest.pythonanywhere.com/job/openings")
+      .then((res) => res.json())
+      .then((json) => {
+        console.log(json.data);
+        setData(json.data);
+        // setLoading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+        setError(err.message);
+        console.log(error);
+        // setLoading(false);
+      });
+  }, []);
+  console.log(typeof data)
+  console.log(data)
+  const cards = data?.map(item => {
+    return (
+        <JobsList 
+          key={item.id}
+          {...item}
+        />
+    )
+})  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <div className="App">
+  <Navbar/>
+  <div className="list">
+  {cards}
+  </div>
+  </div>
+  )
 }
-
-export default App;
