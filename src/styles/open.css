@@ -27,7 +27,9 @@
 
 .exp {
     background-color: #E7FFFB;
-    width: 40%;
+    color: #0043FF;
+    width: 30%;
+    min-width: 120px;
     border: solid 1px whitesmoke;
     border-radius: 10px;
     font-size: 1.2em;
@@ -37,6 +39,7 @@
 .skills {
     padding: 1em 1em 0;
     font-size: 1.2rem;
+    color: gray;
 }
 
 span {
