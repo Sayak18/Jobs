@@ -10,6 +10,7 @@
     margin: .5em 0 .5em 0;
     padding-left: 1em;
     justify-content: space-between;
+    overflow: scroll;
 
 }
 
