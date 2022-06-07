@@ -6,7 +6,7 @@
     height: 30vh;
     min-height: 250px;
     box-sizing: border-box;
-    border: 5px solid #FCFEC4;
+    border: 5px solid whitesmoke;
     border-radius: 20px;
     margin: .5em 0 .5em 0;
     padding-left: 1em;
@@ -27,7 +27,7 @@
 
 .exp {
     background-color: #E7FFFB;
-    width: 30%;
+    width: 40%;
     border: solid 1px whitesmoke;
     border-radius: 10px;
     font-size: 1.2em;
