@@ -1,11 +1,12 @@
 .Jobs {
     display: flex;
     flex-direction: column;
+    background-color: #FFF1E5;
     width: 70%;
     height: 30vh;
     min-height: 250px;
     box-sizing: border-box;
-    border: 5px solid whitesmoke;
+    border: 5px solid #FCFEC4;
     border-radius: 20px;
     margin: .5em 0 .5em 0;
     padding-left: 1em;
@@ -29,8 +30,8 @@
     width: 30%;
     border: solid 1px whitesmoke;
     border-radius: 10px;
-    font-size: 1.2rem;
-    padding-left: 2em;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 .skills {
