@@ -37,11 +37,15 @@
 }
 
 .skills {
-    padding: 1em 1em 0;
+    padding: 1em 1em 0 0;
     font-size: 1.2rem;
     color: gray;
 }
 
 span {
     display: inline-block;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

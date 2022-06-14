@@ -4,6 +4,7 @@
 
 body {
     background-color: #FEF4FF;
+    overflow-x: hidden;
 }
 
 .nav {
